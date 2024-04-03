@@ -1,0 +1,132 @@
+@import url(https://fonts.googleapis.com/earlyaccess/amiri.css);
+:root {
+  font-family: ‘Amiri’, serif;
+  line-height: 1.5;
+  font-weight: 400; 
+   color: rgba(255, 255, 255,0.9);
+  background-color: #ffffff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  
+}
+
+a {
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: inherit;
+  font-weight:bold;
+}
+
+a:visited{
+  color: #ffffff;
+}
+a:hover {
+  color: #000000;
+}
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-image:linear-gradient(90deg, rgba(131,58,180,0.5) 0%, rgba(253,29,29,0.5) 50%, rgba(252,176,69,0.5) 100%), url("https://www.envacgroup.com/wp-content/uploads/2023/05/kafd-building-2-1-1920x1080.jpg");
+}
+
+h1 {
+  width: 100%;
+  max-width: 100%;
+  font-size: 3em;
+}
+
+button { 
+  margin: 10px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 400;
+  font-family: inherit;
+  background-color: rgba(255, 255, 255,0.5);
+  transition: border-color 0.25s;
+  color: #000000;
+  
+}
+button:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #000000;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+@media only screen and (max-width: 600px) {
+  input[type=number] {
+    width: 3px; /* Adjust width as needed */
+    padding: 3px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    justify-content: center;
+    margin: 5px;
+    /* Focus styles (optional) */
+    &:focus {
+      outline: none;
+      border-color: #999;
+    }
+  }
+}
+
+@media only screen and (max-height: 600px) {
+  input[type=number] {
+    width: 3px; /* Adjust width as needed */
+    padding: 3px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    justify-content: center;
+    margin: 5px;
+    /* Focus styles (optional) */
+    &:focus {
+      outline: none;
+      border-color: #999;
+    }
+  }
+}
+
+input[type=number] {
+  width: 100px; /* Adjust width as needed */
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  justify-content: center;
+  margin: 5px;
+  /* Focus styles (optional) */
+  &:focus {
+    outline: none;
+    border-color: #999;
+  }
+}
+label{
+  font-size: medium;
+  color: rgba(255, 255, 255,0.9);
+}
+p{
+  max-width: 100%;
+  color: rgba(255, 255, 255,0.9);
+  font-weight: 500;
+}
